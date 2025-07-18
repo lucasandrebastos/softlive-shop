@@ -54,9 +54,9 @@ Acesse em: [http://localhost:5173](http://localhost:5173)
 
 Você pode acessar a versão online da aplicação aqui:
 
-🔗 [https://nome-da-sua-app.vercel.app](https://nome-da-sua-app.vercel.app)
+🔗 [softlive-shop.vercel.app/](https://softlive-shop.vercel.app/)
 
-> **Observação:** substitua pelo link gerado após o deploy no [Vercel](https://vercel.com) ou [Netlify](https://netlify.com)
+
 
 ---
 
@@ -74,20 +74,27 @@ Você pode acessar a versão online da aplicação aqui:
 
 ```
 src/
-├── components/         # Componentes reutilizáveis
-├── pages/              # Páginas principais (Home, Create, Edit)
-├── services/           # Funções de API (fetch, create, update, delete)
-├── routes/             # Configuração das rotas
-├── types/              # Tipos TypeScript
-├── main.tsx            # Ponto de entrada + React Query Provider
-└── App.tsx             # Container de rotas
+├── components/
+│   ├── Modal.tsx
+│   ├── DeleteDialog.tsx
+│   ├── ProductTable.tsx
+├── features/
+│   └── products/
+│       ├── ProductForm.tsx
+│       ├── ProductsPage.tsx
+│       ├── useProducts.ts
+│       └── productService.ts
+├── types/
+│   └── product.ts
+├── App.tsx
+└── main.tsx
 ```
 
 ---
 
 ## 👨‍💻 Autor
 
-Desenvolvido por **Lucas Bastos** – [linkedin.com/in/lucas-bastos-dev](https://linkedin.com/in/lucas-bastos-dev)
+Desenvolvido por **Lucas Bastos** – [linkedin.com/in/lucasandrebastos/](https://www.linkedin.com/in/lucasandrebastos/)
 
 ---
 
