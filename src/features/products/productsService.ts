@@ -1,4 +1,4 @@
-import type { Product, ProductFormData } from "../types/product";
+import type { Product, ProductFormData } from "../../types/product";
 
 const BASE_URL = "https://687177d276a5723aacd20c88.mockapi.io/api/v1/products";
 
