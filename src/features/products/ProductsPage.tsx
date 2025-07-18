@@ -6,8 +6,7 @@ import ProductForm from "../../components/ProductsForm";
 
 import { useProducts } from "./useProducts";
 import ProductTable from "../../components/ProductTable";
-
-type Mode = "create" | "edit" | "delete";
+import type { Mode } from "../../types/mode";
 
 export default function ProductsPage() {
   const { productsQuery, create, update, remove } = useProducts();
