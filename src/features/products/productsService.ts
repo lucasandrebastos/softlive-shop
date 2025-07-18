@@ -1,6 +1,6 @@
 import type { Product, ProductFormData } from "../../types/product";
 
-const BASE_URL = "https://687177d276a5723aacd20c88.mockapi.io/api/v1/products";
+const BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
 export const fetchProducts = async (): Promise<Product[]> => {
   const res = await fetch(`${BASE_URL}`);
