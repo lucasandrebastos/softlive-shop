@@ -16,20 +16,18 @@ export default function ProductTable({
       <thead>
         <tr>
           <th className="px-4 py-3 text-left text-[#111418] w-[400px] text-sm font-medium">
-            Name
+            Nome
           </th>
           <th className="px-4 py-3 text-left text-[#111418] w-[400px] text-sm font-medium">
-            Description
+            Descrição
           </th>
           <th className="px-4 py-3 text-left text-[#111418] w-[400px] text-sm font-medium">
-            Category
+            Categoria
           </th>
           <th className="px-4 py-3 text-left text-[#111418] w-[400px] text-sm font-medium">
-            Price
+            Preço
           </th>
-          <th className="px-4 py-3 text-left w-60 text-[#60758a] text-sm font-medium">
-            Actions
-          </th>
+          <th className="px-4 py-3 text-left w-60 text-[#60758a] text-sm font-medium"></th>
         </tr>
       </thead>
       {products?.map((product) => (
