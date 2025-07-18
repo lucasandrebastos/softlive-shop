@@ -8,8 +8,6 @@ export interface Product {
   category: string;
 }
 
-// types/product.ts
-
 export const productFormSchema = z.object({
   name: z.string().min(1, "Nome obrigatório"),
   description: z.string().optional(),

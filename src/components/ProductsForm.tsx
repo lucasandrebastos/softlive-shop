@@ -1,6 +1,6 @@
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { productFormSchema, type ProductFormData } from "./types/product";
+import { productFormSchema, type ProductFormData } from "../types/product";
 
 interface ProductFormProps {
   initialValues?: ProductFormData;

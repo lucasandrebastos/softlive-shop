@@ -1,14 +1,14 @@
-import type { Product } from "../types/product";
+import type { Product, ProductFormData } from "../types/product";
 
 const BASE_URL = "https://687177d276a5723aacd20c88.mockapi.io/api/v1/products";
 
-export const getProducts = async (): Promise<Product[]> => {
+export const fetchProducts = async (): Promise<Product[]> => {
   const res = await fetch(`${BASE_URL}`);
-  if (!res.ok) throw new Error("Failed to fetch products");
+  if (!res.ok) throw new Error("Erro ao buscar produtos");
   return res.json();
 };
 
-export const createProduct = async (product: Product) => {
+export const createProduct = async (product: ProductFormData) => {
   const res = await fetch(BASE_URL, {
     method: "POST",
     body: JSON.stringify(product),
@@ -18,7 +18,7 @@ export const createProduct = async (product: Product) => {
   return res.json();
 };
 
-export const updateProduct = async (id: string, product: Product) => {
+export const updateProduct = async (id: string, product: ProductFormData) => {
   const res = await fetch(`${BASE_URL}/${id}`, {
     method: "PUT",
     body: JSON.stringify(product),
